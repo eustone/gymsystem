@@ -1,4 +1,3 @@
-#Create Customer record
 from idgenerator import CustomerID
 
 class Customer:
@@ -23,19 +22,16 @@ class Customer:
 
     @property
     def get_name(self):
-        return _name
+        return self._name
 
     @get_name.setter
     def set_name(self,name):
         self._name = name 
 
-    @get_name.setter
-    def set_name(self,name):
-        self._name = name
-
+    
     @property
     def get_phone_no(self):
-        return _phone_no 
+        return self._phone_no 
 
     @get_phone_no.setter
     def set_phone_no(self,phone_no):
@@ -43,7 +39,7 @@ class Customer:
 
     @property
     def get_joined_date(self):
-        return _joined_date 
+        return self._joined_date 
 
     @get_joined_date.setter
     def set_joined_date(self,joined_date):
@@ -51,7 +47,7 @@ class Customer:
 
     @property
     def get_customer_id(self):
-        return _customer_id
+        return self._customer_id
 
     def __str__(self):
         return f"{self.get_name} {self.get_phone_no}{self.get_joined_date} {self.get_customer_id}"

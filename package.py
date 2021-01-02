@@ -36,4 +36,5 @@ class Package:
         return self._packageid
 
     def __str__(self):
-        return f"{self.get_package_name()} {self.get_facilities()} {self.get_cost} {self.get_package_id}"
+        return f"{self.get_package_name()} {self.get_facilities()}" \
+               f" {self.get_cost} {self.get_package_id}"
