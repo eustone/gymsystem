@@ -1,7 +1,6 @@
 import unittest
 from uuid import uuid4
-from idgenerator import PackageID,CustomerID
-
+from gymsoftware import idgenerator
 
 class TestCase(unittest.TestCase):
     def setUp(self):pass
